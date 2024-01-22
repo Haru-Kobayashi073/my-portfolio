@@ -1,13 +1,12 @@
-import './App.css'
-import "normalize.css/normalize.css";
+import "./App.css";
+import Header from "./components/header";
 
 function App() {
-
   return (
     <>
-    <h1>hello</h1>
+      <Header/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
