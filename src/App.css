@@ -1,5 +1,5 @@
 #root {
-  width:100%;
+  width: 100%;
   background-color: rgb(10, 25, 47);
   color: #8892B0;
 }
@@ -24,7 +24,32 @@ header li {
 
 header a {
   color: #6a85d5;
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   font-size: 24px;
   font-weight: 800;
+}
+
+header a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: '';
+  height: 3px;
+  color: #6a85d5;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 800;
+  width: 100%;
+  background-color: white;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform 0.3s ease;
+}
+
+header a:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+  color: #6a85d5;
 }
