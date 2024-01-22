@@ -1,7 +1,11 @@
 #root {
   width: 100%;
-  background-color: rgb(10, 25, 47);
   color: #8892B0;
+}
+
+body {
+  background-color: rgb(10, 25, 47);
+
 }
 
 header {
@@ -52,4 +56,13 @@ header a:hover::after {
   transform-origin: left top;
   transform: scale(1, 1);
   color: #6a85d5;
+}
+
+.top-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  height: 120vh;
 }
