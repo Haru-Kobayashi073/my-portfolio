@@ -68,8 +68,101 @@ header a:hover::after {
 .top-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 80px;
-  height: 180vh;
+  margin: 18rem 24rem 4rem 24rem;
+  height: 200vh;
+}
+
+.top-box p {
+  font-size: 16px;
+}
+
+.top-box h1 {
+  font-size: 64px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.grey-text {
+  color: hsl(225, 20%, 40%);
+}
+
+.social {
+  position: fixed;
+  z-index: 998;
+  left: 0;
+  bottom: 0;
+  height: 28rem;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.social li {
+  list-style: none;
+  font-size: 1.6em;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.last-social-icon {
+  display: inline-block;
+  margin: 0;
+}
+
+.last-social-icon::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #8892B0;
+}
+
+.social p {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.social p::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100px;
+  margin: auto;
+  background-color: #8892B0;
+}
+
+.sns-icon {
+  transition: transform 0.3s ease;
+  color: #8892B0;
+}
+
+.zenn-icon {
+  width: 1.5em;
+  height: 1.5em;
+  transition: transform 0.3s ease;
+  color: #8892B0;
+}
+
+.wantedly-icon {
+  height: 1.8em;
+  padding-left: 2rem;
+  transition: transform 0.3s ease;
+  color: #8892B0;
+}
+
+.sns-icon:hover, .zenn-icon:hover, .wantedly-icon:hover {
+  transform: translateY(-0.5rem);
 }
